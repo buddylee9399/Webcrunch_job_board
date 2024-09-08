@@ -43,7 +43,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -87,3 +87,14 @@ end
   gem "rolify"
 
   gem "pundit"
+
+gem 'gravatar_image_tag'
+# gem 'stripe'
+# gem 'devise', '~> 4.4.3'
+# gem 'bulma-rails', '~> 0.6.2'
+# gem 'simple_form', '~> 3.5.1'
+# gem 'sidekiq', '~> 5.0'
+# gem 'carrierwave', '~> 1.0'
+# gem 'mini_magick', '~> 4.8'
+# gem 'trix', '~> 0.11.1'
+# gem "figaro"

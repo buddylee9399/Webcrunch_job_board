@@ -24,6 +24,25 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  has_many :jobs      
+  def stripe_id
+    12345
+  end   
+
+  def card_brand
+    "Visa"
+  end
+
+  def card_last4
+    5555
+  end
+  def card_exp_month
+    12
+  end
+  def card_exp_year
+    28
+  end
+
     after_create :assign_default_role
     def assign_default_role
       if User.count == 1
